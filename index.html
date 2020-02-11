@@ -88,7 +88,7 @@
                             <div class="line-dec"></div>
                             <p>Domestic General Cleaning Description</p>
                             <div class="primary-blue-button">
-                                <a href="./general-domestic-cleaning.html" target="_blank">Read More</a>
+                                <a href="./general-domestic-cleaning.html" target="_blank">Book Online</a>
                             </div>
                         </div>
                     </div>
@@ -277,10 +277,27 @@
                 </div>
             </div>
         </div>
+        <div class="cards-list">
+            <div style="flex: 1;"></div>
+            <a class="btncard yellowish" href="#animatedModal" id="demo01">
+                Weekly/Forneight
+            </a>
+            <a class="btncard greenish">
+                Occational Catchup
+            </a>
+            <div style="flex: 1;"></div>
+        </div>
     </section>
-
-    <a id="demo01" href="#animatedModal">DEMO01</a>
-
+    <section id="service-details" class="closed">
+        <div class="content-wrapper">
+            <div class="inner-container container">
+                <div class="row scroll-row">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
     <!--DEMO01-->
     <div id="animatedModal" class="control-size">
         <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
@@ -288,8 +305,13 @@
             <img class="closebt" src="img/closebt.svg">
         </div>
             
-        <div class="modal-content">
-                  <!--Your modal content goes here-->
+        <div class="flex-display">
+            <div class="flex-item"></div>
+            <div class="wrap-input100 validate-input m-b-16 flex-item" style="width: 50%;" data-validate="Please enter email: ex@abc.xyz">
+                <input class="input100" type="text" name="email" placeholder="Email">
+                <span class="focus-input100"></span>
+            </div>
+            <div class="flex-item"></div>
         </div>
     </div>
 
@@ -305,10 +327,13 @@
                             <div class="filter-categories">
                                 <ul class="project-filter">
                                     <li class="filter" data-filter="all"><span>Show All</span></li>
-                                    <li class="filter" data-filter="branding"><span>Branding</span></li>
-                                    <li class="filter" data-filter="graphic"><span>Graphic</span></li>
-                                    <li class="filter" data-filter="nature"><span>Nature</span></li>
-                                    <li class="filter" data-filter="animation"><span>Animation</span></li>
+                                    <li class="filter" data-filter="branding"><span>Domestic General Cleaning</span></li>
+                                    <li class="filter" data-filter="graphic"><span>Domestic Bond Cleaning</span></li>
+                                    <li class="filter" data-filter="nature"><span>Carpet Cleaning</span></li>
+                                    <li class="filter" data-filter="animation"><span>Office Cleaning</span></li>
+                                    <li class="filter" data-filter="tapsee"><span>Periodical Cleaning</span></li>
+                                    <li class="filter" data-filter="tapsee"><span>Loan Moving</span></li>
+                                    <li class="filter" data-filter="tapsee"><span>Other Services</span></li>
                                 </ul>
                             </div>
                         </div>
@@ -316,8 +341,8 @@
                     <div class="col-md-8">
                         <div class="projects-holder-3">
                             <div class="projects-holder">
-                                <div class="row">
-                                    <div class="col-md-6 col-sm-6 project-item mix nature">
+                                <div class="row scroll-row">
+                                    <div class="col-md-6 col-sm-6 project-item mix nature tapsee">
                                       <div class="thumb">
                                             <div class="image">
                                                 <a href="img/portfolio_big_item_01.jpg" data-lightbox="image-1"><img src="img/portfolio_item_01.jpg"></a>
@@ -691,6 +716,10 @@
             animatedIn: 'zoomIn',
             animatedOut: 'bounceOut'
         });
+        // $("#xsfgfs").animatedModal({
+        //     animatedIn: 'zoomIn',
+        //     animatedOut: 'bounceOut'
+        // });
       </script>
 </body>
 </html>
