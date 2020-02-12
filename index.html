@@ -88,7 +88,7 @@
                             <div class="line-dec"></div>
                             <p>Domestic General Cleaning Description</p>
                             <div class="primary-blue-button">
-                                <a href="./general-domestic-cleaning.html" target="_blank">Book Online</a>
+                                <a href="#" class="scroll-link" data-id="about" onclick="expandOptions()">TEST</a>
                             </div>
                         </div>
                     </div>
@@ -277,12 +277,12 @@
                 </div>
             </div>
         </div>
-        <div class="cards-list">
+        <div class="cards-list" id="options">
             <div style="flex: 1;"></div>
-            <a class="btncard yellowish" href="#animatedModal" id="demo01">
+            <a class="btncard yellowish center-align" href="#animatedModal" id="demo01">
                 Weekly/Forneight
             </a>
-            <a class="btncard greenish">
+            <a class="btncard greenish center-align">
                 Occational Catchup
             </a>
             <div style="flex: 1;"></div>
@@ -582,12 +582,6 @@
     </div>
 
     <div id="map">
-    	<!-- How to change your own map point
-            1. Go to Google Maps
-            2. Click on your location point
-            3. Click "Share" and choose "Embed map" tab
-            4. Copy only URL and paste it within the src="" field below
-        -->
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25157.097809969066!2d145.1963796012327!3d-37.9855946521653!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad61407efcfc0d9%3A0x645a4acbafb49876!2sDandenong%20Park!5e0!3m2!1sen!2slk!4v1581103858614!5m2!1sen!2slk" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
 
@@ -648,78 +642,10 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
     <script src="./js/animatedModal.min.js"></script>
     <script type="text/javascript">
-    $(document).ready(function() {
-        // navigation click actions 
-        $('.scroll-link').on('click', function(event){
-            event.preventDefault();
-            var sectionID = $(this).attr("data-id");
-            scrollToID('#' + sectionID, 750);
-        });
-        // scroll to top action
-        $('.scroll-top').on('click', function(event) {
-            event.preventDefault();
-            $('html, body').animate({scrollTop:0}, 'slow');         
-        });
-        // mobile nav toggle
-        $('#nav-toggle').on('click', function (event) {
-            event.preventDefault();
-            $('#main-nav').toggleClass("open");
-        });
-    });
-    // scroll function
-    function scrollToID(id, speed){
-        var offSet = 50;
-        var targetOffset = $(id).offset().top - offSet;
-        var mainNav = $('#main-nav');
-        $('html,body').animate({scrollTop:targetOffset}, speed);
-        if (mainNav.hasClass("open")) {
-            mainNav.css("height", "1px").removeClass("in").addClass("collapse");
-            mainNav.removeClass("open");
-        }
-    }
-    if (typeof console === "undefined") {
-        console = {
-            log: function() { }
-        };
-    }
-    </script>
-
-<script>
-    var mySwiper = new Swiper ('.swiper-container', {
-      // Optional parameters
-      direction: 'horizontal',
-      loop: true,
-  
-      slidesPerView: 'auto',
-      spaceBetween: 30,
-
-      // If we need pagination
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-  
-      // Navigation arrows
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-  
-      // And if we need scrollbar
-      scrollbar: {
-        el: '.swiper-scrollbar',
-      },
-    })
-    </script>
-    <script>
         $("#demo01").animatedModal({
             animatedIn: 'zoomIn',
             animatedOut: 'bounceOut'
         });
-        // $("#xsfgfs").animatedModal({
-        //     animatedIn: 'zoomIn',
-        //     animatedOut: 'bounceOut'
-        // });
-      </script>
+    </script>
 </body>
 </html>

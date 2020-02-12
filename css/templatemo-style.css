@@ -968,6 +968,13 @@ footer .connect-us ul li a:hover {
 		flex: 1;
 	}
 
+	.center-align {
+		font-size: 30px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
 /* RESPONSIVE */
 
 @media (max-width: 991px){
