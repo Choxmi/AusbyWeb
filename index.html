@@ -9,6 +9,7 @@
         
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+        <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
         
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
@@ -88,7 +89,7 @@
                             <div class="line-dec"></div>
                             <p>Domestic General Cleaning Description</p>
                             <div class="primary-blue-button">
-                                <a href="#" class="scroll-link" data-id="about" onclick="expandOptions()">TEST</a>
+                                <a href="#" class="scroll-link" data-id="tile_focus" onclick="expandOptions(0)">Book Online</a>
                             </div>
                         </div>
                     </div>
@@ -103,7 +104,7 @@
                             <div class="line-dec"></div>
                             <p>Domestic Bond Cleaning Description</p>
                             <div class="primary-blue-button">
-                                <a href="./domestic-bond-cleaning.html" target="_blank">Read More</a>
+                                <a href="#" class="scroll-link" data-id="tile_focus" onclick="expandOptions(1)">Book Online</a>
                             </div>
                         </div>
                     </div>
@@ -118,7 +119,7 @@
                             <div class="line-dec"></div>
                             <p>Carpet Cleaning Description</p>
                             <div class="primary-blue-button">
-                                <a href="./carpet-cleaning.html" target="_blank">Read More</a>
+                                <a href="#" class="scroll-link" data-id="tile_focus" onclick="expandOptions(2)">Book Online</a>
                             </div>
                         </div>
                     </div>
@@ -133,7 +134,7 @@
                             <div class="line-dec"></div>
                             <p>Office Cleaning Description</p>
                             <div class="primary-blue-button">
-                                <a href="./office-cleaning.html" target="_blank">Read More</a>
+                                <a href="#" class="scroll-link" data-id="tile_focus" onclick="expandOptions(3)">Book Online</a>
                             </div>
                         </div>
                     </div>
@@ -148,7 +149,7 @@
                             <div class="line-dec"></div>
                             <p>Periodical Cleaning Description</p>
                             <div class="primary-blue-button">
-                                <a href="./periodical-cleaning.html" target="_blank">Read More</a>
+                                <a href="#" class="scroll-link" data-id="tile_focus" onclick="expandOptions(4)">Book Online</a>
                             </div>
                         </div>
                     </div>
@@ -163,7 +164,7 @@
                             <div class="line-dec"></div>
                             <p>Loan Moving Description</p>
                             <div class="primary-blue-button">
-                                <a href="./loan-moving.html" target="_blank">Read More</a>
+                                <a href="#" class="scroll-link" data-id="tile_focus" onclick="expandOptions(5)">Book Online</a>
                             </div>
                         </div>
                     </div>
@@ -178,7 +179,7 @@
                             <div class="line-dec"></div>
                             <p>Other Services Description</p>
                             <div class="primary-blue-button">
-                                <a href="./other-services.html" target="_blank">Read More</a>
+                                <a href="#" class="scroll-link" data-id="tile_focus" onclick="expandOptions(6)">Book Online</a>
                             </div>
                         </div>
                     </div>
@@ -188,7 +189,7 @@
             <div class="swiper-pagination"></div>
         
             <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-prev" id="tile_focus"></div>
             <div class="swiper-button-next"></div>
         
             <!-- If we need scrollbar -->
@@ -206,7 +207,7 @@
                         <div class="line-dec"></div>
                         <p>Domestic General Cleaning Description</p>
                         <div class="primary-blue-button">
-                            <a href="/general-domestic-cleaning.html" class="scroll-link" data-id="portfolio">Continue Reading</a>
+                            <a href="#" class="scroll-link" data-id="options" onclick="expandOptions(0)">Book Online</a>
                         </div>
                     </div>
                 </div>
@@ -215,11 +216,11 @@
                         <div class="icon">
                             <img src="img/service_icon_02.png" alt="">
                         </div>
-                        <h4>Lovely Web Design</h4>
+                        <h4>Domestic Bond Cleaning</h4>
                         <div class="line-dec"></div>
-                        <p>Do NOT re-distribute our template on any template download website. However, you can feel free to use this template for your commercial or non-commercial sites.</p>
+                        <p>Domestic Bond Cleaning Description</p>
                         <div class="primary-blue-button">
-                            <a href="#" class="scroll-link" data-id="portfolio">Continue Reading</a>
+                            <a href="#" class="scroll-link" data-id="options" onclick="expandOptions(1)">Book Online</a>
                         </div>
                     </div>
                 </div>
@@ -228,11 +229,11 @@
                         <div class="icon">
                             <img src="img/service_icon_03.png" alt="">
                         </div>
-                        <h4>24/7 Quick Support</h4>
+                        <h4>Carpet Cleaning</h4>
                         <div class="line-dec"></div>
-                        <p>Feel free to talk to us on our Facebook page if you have any kind of question or suggestion. Sed tempor mi quis rhoncus convallis.</p>
+                        <p>Carpet Cleaning Description</p>
                         <div class="primary-blue-button">
-                            <a href="#" class="scroll-link" data-id="portfolio">Continue Reading</a>
+                            <a href="#" class="scroll-link" data-id="options" onclick="expandOptions(2)">Book Online</a>
                         </div>
                     </div>
                 </div>
@@ -241,37 +242,50 @@
                         <div class="icon">
                             <img src="img/service_icon_04.png" alt="">
                         </div>
-                        <h4>One-Click Setup</h4>
+                        <h4>Office Cleaning</h4>
                         <div class="line-dec"></div>
-                        <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent viverra, nunc et mollis fermentum.</p>
+                        <p>Office Cleaning Description</p>
                         <div class="primary-blue-button">
-                            <a href="#" class="scroll-link" data-id="portfolio">Continue Reading</a>
+                            <a href="#" class="scroll-link" data-id="options" onclick="expandOptions(3)">Book Online</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-8 col-xs-16 seperator">
                     <div class="service-item">
                         <div class="icon">
-                            <img src="img/service_icon_04.png" alt="">
+                            <img src="img/service_icon_05.png" alt="">
                         </div>
-                        <h4>One-Click Setup</h4>
+                        <h4>Periodical Cleaning</h4>
                         <div class="line-dec"></div>
-                        <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent viverra, nunc et mollis fermentum.</p>
+                        <p>Periodical Cleaning Description</p>
                         <div class="primary-blue-button">
-                            <a href="#" class="scroll-link" data-id="portfolio">Continue Reading</a>
+                            <a href="#" class="scroll-link" data-id="options" onclick="expandOptions(4)">Book Online</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-8 col-xs-16 seperator">
                     <div class="service-item">
                         <div class="icon">
-                            <img src="img/service_icon_04.png" alt="">
+                            <img src="img/service_icon_06.png" alt="">
                         </div>
-                        <h4>One-Click Setup</h4>
+                        <h4>Loan Moving</h4>
                         <div class="line-dec"></div>
-                        <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent viverra, nunc et mollis fermentum.</p>
+                        <p>Loan Moving Description</p>
                         <div class="primary-blue-button">
-                            <a href="#" class="scroll-link" data-id="portfolio">Continue Reading</a>
+                            <a href="#" class="scroll-link" data-id="options" onclick="expandOptions(5)">Book Online</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-8 col-xs-16 seperator">
+                    <div class="service-item">
+                        <div class="icon">
+                            <img src="img/service_icon_06.png" alt="">
+                        </div>
+                        <h4>Loan Moving</h4>
+                        <div class="line-dec"></div>
+                        <p>Loan Moving Description</p>
+                        <div class="primary-blue-button">
+                            <a href="#" class="scroll-link" data-id="options" onclick="expandOptions(6)">Book Online</a>
                         </div>
                     </div>
                 </div>
@@ -299,19 +313,12 @@
     
     
     <!--DEMO01-->
-    <div id="animatedModal" class="control-size">
+    <div id="animatedModal" class="control-size" style="z-index: 2 !important;">
         <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
         <div class="close-animatedModal"> 
             <img class="closebt" src="img/closebt.svg">
         </div>
-            
-        <div class="flex-display">
-            <div class="flex-item"></div>
-            <div class="wrap-input100 validate-input m-b-16 flex-item" style="width: 50%;" data-validate="Please enter email: ex@abc.xyz">
-                <input class="input100" type="text" name="email" placeholder="Email">
-                <span class="focus-input100"></span>
-            </div>
-            <div class="flex-item"></div>
+        <div id="modal-div">
         </div>
     </div>
 
@@ -641,7 +648,12 @@
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
     <script src="./js/animatedModal.min.js"></script>
+    <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
     <script type="text/javascript">
+        $('#datepicker').datepicker({
+            uiLibrary: 'bootstrap'
+        });
         $("#demo01").animatedModal({
             animatedIn: 'zoomIn',
             animatedOut: 'bounceOut'
