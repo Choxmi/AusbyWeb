@@ -167,7 +167,7 @@ p {
 .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
 	background-color: #f7c552;
 }
-bootstrap.min.css:5
+
 .navbar-toggle {
     position: relative;
     float: right;
@@ -312,7 +312,7 @@ bootstrap.min.css:5
 	padding: 30px 15px 0px 15px;
 }
 
-.filter-categories {;
+.filter-categories {
   margin-top: 60px;
 }
 
@@ -834,10 +834,15 @@ footer .connect-us ul li a:hover {
 	  transition-duration: 0.5s;
   }
 
-  .close-animatedModal {
+  .close-animatedModal1 {
 	  text-align: center;
 	  padding: 2%;
   }
+
+  .close-animatedModal2 {
+	text-align: center;
+	padding: 2%;
+}
 
   .control-size {
 	  height: 80% !important;

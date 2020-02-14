@@ -134,7 +134,7 @@
                             <div class="line-dec"></div>
                             <p>Office Cleaning Description</p>
                             <div class="primary-blue-button">
-                                <a href="#" class="scroll-link" data-id="tile_focus" onclick="expandOptions(3)">Book Online</a>
+                                <a href="#animatedModal1" id="officeCleaning" onclick="expandOptions(3)">Book Online</a>
                             </div>
                         </div>
                     </div>
@@ -293,10 +293,10 @@
         </div>
         <div class="cards-list" id="options">
             <div style="flex: 1;"></div>
-            <a class="btncard yellowish center-align" href="#animatedModal" id="demo01">
-                Weekly/Forneight
+            <a class="btncard yellowish center-align" href="#animatedModal1" id="demo01">
+                Weekly/Fortnight
             </a>
-            <a class="btncard greenish center-align">
+            <a class="btncard greenish center-align" href="#animatedModal2" id="demo02">
                 Occational Catchup
             </a>
             <div style="flex: 1;"></div>
@@ -313,12 +313,22 @@
     
     
     <!--DEMO01-->
-    <div id="animatedModal" class="control-size" style="z-index: 2 !important;">
+    <div id="animatedModal1" class="control-size" style="z-index: 2 !important;">
         <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
-        <div class="close-animatedModal"> 
-            <img class="closebt" src="img/closebt.svg">
+        <div class="close-animatedModal1"> 
+            <a><img class="closebt" src="img/closebt.svg"></a>
         </div>
-        <div id="modal-div">
+        <div id="modal-div1">
+        </div>
+    </div>
+
+    <!--DEMO02-->
+    <div id="animatedModal2" class="control-size" style="z-index: 2 !important;">
+        <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
+        <div class="close-animatedModal2"> 
+            <a><img class="closebt" src="img/closebt.svg"></a>
+        </div>
+        <div id="modal-div2">
         </div>
     </div>
 
@@ -655,6 +665,14 @@
             uiLibrary: 'bootstrap'
         });
         $("#demo01").animatedModal({
+            animatedIn: 'zoomIn',
+            animatedOut: 'bounceOut'
+        });
+        $("#demo02").animatedModal({
+            animatedIn: 'zoomIn',
+            animatedOut: 'bounceOut'
+        });
+        $("#officeCleaning").animatedModal({
             animatedIn: 'zoomIn',
             animatedOut: 'bounceOut'
         });
