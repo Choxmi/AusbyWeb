@@ -1046,6 +1046,18 @@ footer .connect-us ul li a:hover {
 	.modal-header{
 		text-align: center;
 		color:aliceblue;
+		border-bottom: none;
+	}
+
+	#quote {
+		background-image: url(../img/quote-background.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-attachment: fixed;
+	}
+
+	#quote .adjuster {
+		padding: 5%;
 	}
 
 /* RESPONSIVE */

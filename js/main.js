@@ -191,6 +191,74 @@ var modals1 = [
       </div>
   </div>
   <div class="flex-display">
+        <div class="wrap-input100 validate-input m-b-16 flex-item" style="width: 50%;" data-validate="Please enter email: ex@abc.xyz">
+            <input class="input100" type="text" name="phone" placeholder="Sqr">
+            <span class="focus-input100"></span>
+        </div>
+        <div class="wrap-input100 validate-input m-b-16 flex-item" style="width: 50%;" data-validate="Please enter email: ex@abc.xyz">
+        <select class="input100">
+            <option value="" selected data-default hidden>Select number of floors</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>Others (please specify in message)</option>
+        </select>
+        </div>
+  </div>
+  <div class="flex-display">
+        <div class="wrap-input100 validate-input m-b-16 flex-item" style="width: 50%;" data-validate="Please enter email: ex@abc.xyz">
+            <textarea class="input100" type="text" name="phone" placeholder="Message"></textarea>
+            <span class="focus-input100"></span>
+        </div>
+  </div>
+  <div class="flex-display">
+      <div class="wrap-input101 validate-input m-b-16 flex-item" style="width: 50%;" data-validate="Please enter email: ex@abc.xyz">
+          <button onclick="showMsg()" class="input101">Submit</button>
+          <span class="hover-input101"></span>
+      </div>
+  </div>`,
+
+  `<h1 class="modal-header">Periodical Cleaning</i></h1>
+  <div class="flex-display">
+      <div class="wrap-input100 validate-input m-b-16 flex-item" style="width: 50%;" data-validate="Please enter email: ex@abc.xyz">
+          <input class="input100" type="text" name="name" placeholder="Name">
+          <span class="focus-input100"></span>
+      </div>
+      <div class="wrap-input100 validate-input m-b-16 flex-item" style="width: 50%;" data-validate="Please enter email: ex@abc.xyz">
+          <input class="input100" type="text" name="email" placeholder="Email">
+          <span class="focus-input100"></span>
+      </div>
+  </div>    
+  <div class="flex-display">
+      <div class="wrap-input100 validate-input m-b-16 flex-item" style="width: 50%;" data-validate="Please enter email: ex@abc.xyz">
+          <input id="datepicker" class="input100" type="text" name="date" placeholder="Date" />
+          <span class="focus-input100"></span>
+      </div>
+      <div class="wrap-input100 validate-input m-b-16 flex-item" style="width: 50%;" data-validate="Please enter email: ex@abc.xyz">
+          <input class="input100" type="text" name="phone" placeholder="Phone Number">
+          <span class="focus-input100"></span>
+      </div>
+  </div>
+  <div class="flex-display">
+      <div class="wrap-input100 validate-input m-b-16 flex-item" style="width: 50%;" data-validate="Please enter email: ex@abc.xyz">
+          <select class="input100">
+              <option value="" selected data-default hidden>Select city</option>
+              <option>Brisbane</option>
+          </select>
+          <span class="focus-input100"></span>
+      </div>
+      <div class="wrap-input100 validate-input m-b-16 flex-item" style="width: 50%;" data-validate="Please enter email: ex@abc.xyz">
+          <select class="input100">
+              <option value="" selected data-default hidden>Select suburb</option>
+              <option>suburb1</option>
+          </select>
+          <span class="focus-input100"></span>
+      </div>
+  </div>
+  <div class="flex-display">
       <div class="wrap-input100 validate-input m-b-16 flex-item" style="width: 50%;" data-validate="Please enter email: ex@abc.xyz">
           <textarea class="input100" type="text" name="phone" placeholder="Message"></textarea>
           <span class="focus-input100"></span>
@@ -202,9 +270,63 @@ var modals1 = [
           <span class="hover-input101"></span>
       </div>
   </div>`,
-  ``,
-  ``,
-  ``
+
+  `<h1 class="modal-header">Loan Moving</h1>
+  <div class="flex-display">
+      <div class="wrap-input100 validate-input m-b-16 flex-item" style="width: 50%;" data-validate="Please enter email: ex@abc.xyz">
+          <input class="input100" type="text" name="name" placeholder="Name">
+          <span class="focus-input100"></span>
+      </div>
+      <div class="wrap-input100 validate-input m-b-16 flex-item" style="width: 50%;" data-validate="Please enter email: ex@abc.xyz">
+          <input class="input100" type="text" name="email" placeholder="Email">
+          <span class="focus-input100"></span>
+      </div>
+  </div>    
+  <div class="flex-display">
+      <div class="wrap-input100 validate-input m-b-16 flex-item" style="width: 50%;" data-validate="Please enter email: ex@abc.xyz">
+          <input id="datepicker" class="input100" type="text" name="date" placeholder="Date" />
+          <span class="focus-input100"></span>
+      </div>
+      <div class="wrap-input100 validate-input m-b-16 flex-item" style="width: 50%;" data-validate="Please enter email: ex@abc.xyz">
+          <input class="input100" type="text" name="phone" placeholder="Phone Number">
+          <span class="focus-input100"></span>
+      </div>
+  </div>
+  <div class="flex-display">
+      <div class="wrap-input100 validate-input m-b-16 flex-item" style="width: 50%;" data-validate="Please enter email: ex@abc.xyz">
+          <select class="input100">
+              <option value="" selected data-default hidden>Select city</option>
+              <option>Brisbane</option>
+          </select>
+          <span class="focus-input100"></span>
+      </div>
+      <div class="wrap-input100 validate-input m-b-16 flex-item" style="width: 50%;" data-validate="Please enter email: ex@abc.xyz">
+          <select class="input100">
+              <option value="" selected data-default hidden>Select suburb</option>
+              <option>suburb1</option>
+          </select>
+          <span class="focus-input100"></span>
+      </div>
+  </div>
+  <div class="flex-display">
+        <div class="wrap-input100 validate-input m-b-16 flex-item" style="width: 50%;" data-validate="Please enter email: ex@abc.xyz">
+            <input class="input100" type="text" name="phone" placeholder="Land/Yard Sqr">
+            <span class="focus-input100"></span>
+        </div>
+        <div class="wrap-input100 validate-input m-b-16 flex-item" style="width: 50%;" data-validate="Please enter email: ex@abc.xyz">
+            <textarea class="input100" type="text" name="phone" placeholder="Message"></textarea>
+            <span class="focus-input100"></span>
+        </div>
+  </div>
+  <p style="text-align: center;color: white;">Further contact us for any clarification</p>
+  <div class="flex-display">
+      <div class="wrap-input101 validate-input m-b-16 flex-item" style="width: 50%;" data-validate="Please enter email: ex@abc.xyz">
+          <button onclick="showMsg()" class="input101">Submit</button>
+          <span class="hover-input101"></span>
+      </div>
+  </div>`,
+  `<h1 class="modal-header">Other Cleaning</h1>
+  <p> Content </p>`
 ];
 
 var modals2 = [
