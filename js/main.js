@@ -1,3 +1,4 @@
+var baseUrl = "http://choxcreations.000webhostapp.com/AusbyWeb";
 var modals1 = [
   `<h1 class="modal-header">Domestic General Cleaning <i>(Weekly/Fortnight)</i></h1>
   <div class="flex-display">
@@ -657,7 +658,66 @@ jQuery(document).ready(function($) {
           el: '.swiper-scrollbar',
         },
       })
+
       $("#options").hide();
+
+      $("input:file").change(function (){
+        var fileName = $(this).val();
+        $(".custom-file-upload").html(fileName);
+      });
+
+      $(':radio').change(async function() {
+          var rating = this.value;
+          const { value: formValues } = await Swal.fire({
+            confirmButtonText: 'Submit',
+            title: 'Multiple inputs',
+            html:
+            `<div class="flex-display-alt">
+            <div class="wrap-input102 validate-input m-b-16 flex-item" style="width: 50%;" data-validate="Please enter email: ex@abc.xyz">
+                <input id="rev_email" class="input102" type="text" name="phone" placeholder="Email">
+                <span class="focus-input102"></span>
+            </div>
+            </div>
+            <div class="flex-display-alt">
+            <div class="wrap-input102 validate-input m-b-16 flex-item" style="width: 50%;" data-validate="Please enter email: ex@abc.xyz">
+                <input id="rev_name" class="input102" type="text" name="phone" placeholder="Name">
+                <span class="focus-input102"></span>
+            </div>
+            </div>
+            <div class="flex-display-alt">
+            <div class="wrap-input102 validate-input m-b-16 flex-item" style="width: 50%;" data-validate="Please enter email: ex@abc.xyz">
+                <input id="rev_comment" class="input102" type="text" name="phone" placeholder="Review">
+                <span class="focus-input102"></span>
+            </div>
+            </div>`,
+            focusConfirm: false,
+            preConfirm: () => {
+              return [
+                rating,
+                document.getElementById('rev_email').value,
+                document.getElementById('rev_name').value,
+                document.getElementById('rev_comment').value
+              ]
+            }
+          })
+          
+          if (formValues) {
+            if(formValues[0] !== "" && formValues[1] !== "" && formValues[2] !== ""){
+                var jqxhr = $.post( baseUrl+"/api/addrating.php", {rating: formValues[0], email: formValues[1], name: formValues[2], review: formValues[3]})
+                .done(function(res) {
+                    console.log(res);
+                    alert( "second success" );
+                    return;
+                })
+                .fail(function(err) {
+                    console.log(err);
+                    alert( "error" );
+                    return;
+                });
+            }
+          }
+      });
+
 });
 
 var last_section = 0;
