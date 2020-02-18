@@ -760,3 +760,15 @@ function showMsg(){
     'success'
   );
 }
+
+function registerToggle(){
+    $('#toggle_title').html('Register With Us');
+    $('#toggle_para').html('Register With Us Description');
+    $('.toggle-register')[0].click();
+}
+
+function workToggle(){
+    $('#toggle_title').html('Work With Us');
+    $('#toggle_para').html('Work With Us Description');
+    $('.toggle-work')[0].click();
+}
