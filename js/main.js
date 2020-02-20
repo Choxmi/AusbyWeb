@@ -670,7 +670,7 @@ jQuery(document).ready(function($) {
           var rating = this.value;
           const { value: formValues } = await Swal.fire({
             confirmButtonText: 'Submit',
-            title: 'Multiple inputs',
+            title: 'Submit your review',
             html:
             `<div class="flex-display-alt">
             <div class="wrap-input102 validate-input m-b-16 flex-item" style="width: 50%;" data-validate="Please enter email: ex@abc.xyz">
