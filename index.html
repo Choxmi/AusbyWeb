@@ -110,7 +110,7 @@
                     <div class="col-md-8 col-sm-16 col-xs-32 seperator">
                         <div class="service-item">
                             <div class="icon">
-                                <img src="img/service_icon_02.png" alt="">
+                                <img src="img/service_icon_02.svg" alt="">
                             </div>
                             <h4>Domestic Bond Cleaning</h4>
                             <div class="line-dec"></div>
@@ -127,7 +127,7 @@
                     <div class="col-md-8 col-sm-16 col-xs-32 seperator">
                         <div class="service-item">
                             <div class="icon">
-                                <img src="img/service_icon_03.png" alt="">
+                                <img src="img/service_icon_03.svg" alt="">
                             </div>
                             <h4>Carpet Cleaning</h4>
                             <div class="line-dec"></div>
@@ -144,7 +144,7 @@
                     <div class="col-md-8 col-sm-16 col-xs-32 seperator">
                         <div class="service-item">
                             <div class="icon">
-                                <img src="img/service_icon_04.png" alt="">
+                                <img src="img/service_icon_04.svg" alt="">
                             </div>
                             <h4>Office Cleaning</h4>
                             <div class="line-dec"></div>
@@ -180,7 +180,7 @@
                     <div class="col-md-8 col-sm-16 col-xs-32 seperator">
                         <div class="service-item">
                             <div class="icon">
-                                <img src="img/service_icon_06.png" alt="">
+                                <img src="img/service_icon_06.svg" alt="">
                             </div>
                             <h4>Loan Moving</h4>
                             <div class="line-dec"></div>
@@ -241,7 +241,7 @@
                 <div class="col-md-4 col-sm-8 col-xs-16 seperator">
                     <div class="service-item">
                         <div class="icon">
-                            <img src="img/service_icon_02.png" alt="">
+                            <img src="img/service_icon_02.svg" alt="">
                         </div>
                         <h4>Domestic Bond Cleaning</h4>
                         <div class="line-dec"></div>
@@ -256,7 +256,7 @@
                 <div class="col-md-4 col-sm-8 col-xs-16 seperator">
                     <div class="service-item">
                         <div class="icon">
-                            <img src="img/service_icon_03.png" alt="">
+                            <img src="img/service_icon_03.svg" alt="">
                         </div>
                         <h4>Carpet Cleaning</h4>
                         <div class="line-dec"></div>
@@ -271,7 +271,7 @@
                 <div class="col-md-4 col-sm-8 col-xs-16 seperator">
                     <div class="service-item">
                         <div class="icon">
-                            <img src="img/service_icon_04.png" alt="">
+                            <img src="img/service_icon_04.svg" alt="">
                         </div>
                         <h4>Office Cleaning</h4>
                         <div class="line-dec"></div>
@@ -303,7 +303,7 @@
                 <div class="col-md-4 col-sm-8 col-xs-16 seperator">
                     <div class="service-item">
                         <div class="icon">
-                            <img src="img/service_icon_06.png" alt="">
+                            <img src="img/service_icon_06.svg" alt="">
                         </div>
                         <h4>Loan Moving</h4>
                         <div class="line-dec"></div>
@@ -378,19 +378,21 @@
                     <h2 class="modal-header">Request for free quote</h2>
                     <div class="flex-display">
                         <div class="wrap-input100 validate-input m-b-16 flex-item" style="width: 50%;" data-validate="Please enter email: ex@abc.xyz">
-                            <select class="input100">
+                            <select class="input100" id="quote_type">
                                 <option value="" selected data-default hidden>Select Service type</option>
-                                <option>Domestic General Cleaning</option>
-                                <option>Domestic Bond Cleaning</option>
-                                <option>Carpet Cleaning</option>
-                                <option>Office Cleaning</option>
-                                <option>Periodical Cleaning</option>
-                                <option>Loan Moving</option>
-                                <option>Other Services</option>
+                                <option value="1">Domestic General Cleaning</option>
+                                <option value="2">Domestic Bond Cleaning</option>
+                                <option value="3">Carpet Cleaning</option>
+                                <option value="4">Office Cleaning</option>
+                                <option value="5">Periodical Cleaning</option>
+                                <option value="6">Loan Moving</option>
+                                <option value="7">Other Services</option>
                             </select>
                             <span class="focus-input100"></span>
                         </div>
                     </div>
+                    <div id="div_quotes">
+                        <form id="quote_form">
                     <div class="flex-display">
                         <div class="wrap-input100 validate-input m-b-16 flex-item" style="width: 50%;" data-validate="Please enter email: ex@abc.xyz">
                             <input class="input100" type="text" name="name" placeholder="Name">
@@ -433,11 +435,13 @@
                             <span class="focus-input100"></span>
                         </div>
                     </div>
+                </form>
                     <div class="flex-display">
                         <div class="wrap-input101 validate-input m-b-16 flex-item" style="width: 50%;" data-validate="Please enter email: ex@abc.xyz">
                             <button onclick="showMsg()" class="input101">Request</button>
                             <span class="hover-input101"></span>
                         </div>
+                    </div>
                     </div>
                 </div>
             </div>
@@ -884,18 +888,18 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4 col-sm-12">
-                    <div class="logo">
-                        <a class="logo-ft scroll-top" href="#"><em>AUS</em>BY</a>
-                        <p>Copyright &copy; 2020 Your Company 
-                       <br></p>
-                    </div>
+                    <p>Copyright &copy; 2020 AUSBY   
+                   <br></p>
+                    <a href="#" class="navbar-brand scroll-top">
+                        <!-- AUS<em>BY</em> -->
+                        <img src="./img/logo.png" style="height: inherit;"/>
+                    </a>
                 </div>
                 <div class="col-md-4 col-sm-12">
                     <div class="location">
-                        <h4>Location</h4>
+                        <h4>credits</h4>
                         <ul>
-                            <li>174 Lonsdale St,<br>Dandenong VIC 3175,Australia</li>
-                            <!-- <li>12 Republic Blvd, <br>Singapore 038975</li> -->
+                            <a href="https://www.freepik.com/free-photos-vectors/business">Business vector created by jemastock - www.freepik.com</a>
                         </ul>
                     </div>
                 </div>
@@ -916,7 +920,6 @@
                             <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                             <li><a href="#"><i class="fa fa-google"></i></a></li>
                             <li><a href="#"><i class="fa fa-rss"></i></a></li>
-                            <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
                         </ul>
                     </div>
                 </div>

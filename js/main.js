@@ -718,6 +718,11 @@ jQuery(document).ready(function($) {
           }
       });
 
+      $("#quote_type").change(function (){
+        alert($(this).val());
+        $("#quote_form").empty();
+      });      
+
 });
 
 var last_section = 0;
